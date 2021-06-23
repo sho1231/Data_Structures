@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1624457694 source:d:\course\c\data structure\linkedlist\double linkedlist\menu driven double\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
