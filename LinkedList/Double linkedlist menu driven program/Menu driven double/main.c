@@ -196,7 +196,7 @@ int main()
     head=0;
     int d=1;
     while(d==1)
-    { printf("1)Insert at the beginning.\n2)Insert at the end.\n3)Insert at any position.\n4)Delete at the beginning.\n5)Delete at the end.\n6)Delete at any position.\n7)Display even nodes.\n8)Display odd nodes.\n9)Reversing the nodes.\n10)Display.\n11)Swapping nodes.\n13)Exit.\n14)Clear the console.\n");
+    { printf("1)Insert at the beginning.\n2)Insert at the end.\n3)Insert at any position.\n4)Delete at the beginning.\n5)Delete at the end.\n6)Delete at any position.\n7)Display even nodes.\n8)Display odd nodes.\n9)Reversing the nodes.\n10)Display.\n11)Swapping nodes.\n12)Total number of nodes.\n13)Exit.\n14)Clear the console.\n");
         int c,pos,pos2;
         printf("Enter choice:");
         scanf("%d",&c);
