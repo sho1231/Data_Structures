@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1623341171 source:d:\course\c\dma\array_insertion\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1623650939 source:d:\course\c\data structure\array_insertion\main.c
+	<stdio.h>
+	<stdlib.h>
+
