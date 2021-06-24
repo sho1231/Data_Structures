@@ -370,9 +370,9 @@ int main()
             {
                  printf("Enter the two positions: ");
                 scanf("%d%d",&pos,&pos2);
-                while(pos<1 || pos2<1 || pos>count || pos2>count)
+                while(pos<1 || pos2<1 || pos>count || pos2>count || pos>pos2)
                 {
-                printf("The positions you entered is invalid,please enter correct positions: ");
+                printf("The positions you entered is invalid or not in ascending order,please enter correct positions in ascending order: ");
                scanf("%d%d",&pos,&pos2);
                 }
                 swap(pos,pos2);
