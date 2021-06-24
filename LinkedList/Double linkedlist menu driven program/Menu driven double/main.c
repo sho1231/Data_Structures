@@ -346,11 +346,11 @@ int main()
                 printf("Swapping cannot occur when less than 2 nodes are present..\n");
             else
             {
-                printf("Enter the two positions: ");
+                printf("Enter the two positions in ascending order: ");
                 scanf("%d%d",&pos,&pos2);
-                while(pos<1 || pos2<1 ||pos>count||pos2>count)
+                while(pos<1 || pos2<1 ||pos>count||pos2>count || pos>pos2)
                 {
-                    printf("The position you entered might be invalid..please enter correct positions: ");
+                    printf("The positions you entered might be invalid or not in ascending order..please enter correct positions in ascending order: ");
                     scanf("%d%d",&pos,&pos2);
                 }
                 swap(pos,pos2);
