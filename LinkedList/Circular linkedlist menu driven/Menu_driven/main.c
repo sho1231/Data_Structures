@@ -54,18 +54,24 @@ void del_e()
     }
 }
 void del_a(int pos)
-{
+{ printf("%d\n",count);
     struct node *t,*a,*b;int trav=1;
     t=head;
-    while(trav!=(count-1))
+    while(trav!=(count+1))
     {
         if(trav==pos-1)
+        {
             a=t;
+            printf("%d\n",a->d);
+        }
         else if(trav==pos)
         {
             b=t->adr;
+            printf("%d\n",b->d);
             a->adr=b;
+            printf("%d\n",a->d);
             free(t);
+            printf("%d\n",count);
             break;
         }
         t=t->adr;
