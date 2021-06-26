@@ -96,7 +96,7 @@ void insert_a(int pos)
     newnode->adr=head;
     struct node *t,*a;int trav=1;
     t=head;
-    while(trav!=(count+1))
+    while(trav<(count+1))
     {
         if(trav==pos-1)
         {
@@ -230,14 +230,19 @@ int main()
            printf("Enter data:");
            scanf("%d",&newnode->d);
            if(pos==1)
-                insert_b();
+           {
+            insert_b();
+            count++;
+           }
            else if(pos==(count+1))
-            {   count++;
+            {
                 insert_e();
+                count++;
            }
            else
-           {    count++;
+           {
                 insert_a(pos);
+                count++;
            }
             break;
         case 4:
