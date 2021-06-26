@@ -282,7 +282,7 @@ int main()
             {
                 printf("Enter pos: ");
                 scanf("%d",&pos);
-                 while(pos>(count+1)|| pos<1)
+                 while(pos>count|| pos<1)
             {
                printf("Invalid position..please enter correct position: ");
                scanf("%d",&pos);
