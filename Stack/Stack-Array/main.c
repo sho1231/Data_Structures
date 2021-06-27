@@ -29,7 +29,16 @@ void push(int n)
        // printf("%d\n",top);
     }
 }
-int pop()
+void peek()
+{
+    if(isEmpty())
+        printf("Stack Underflow...\n");
+    else
+    {
+        printf("%d\n",stack[top]);
+    }
+}
+void pop()
 {
     if(isEmpty())
         printf("Stack Underflow..\n");
@@ -56,7 +65,7 @@ int main()
     int ch=1;
     while(ch==1)
     {
-        printf("1)Push.\n2)Pop.\n3)isFull.\n4)isEmpty.\n5)Display.\n6)Clear screen.\n7)Exit.\n");
+        printf("1)Push.\n2)Pop.\n3)isFull.\n4)isEmpty.\n5)Display.\n6)Clear screen.\n7)peek.\n8)Exit.\n");
         int c,n;
         printf("Enter choice: ");
         scanf("%d",&c);
@@ -89,6 +98,9 @@ int main()
             system("cls");
             break;
         case 7:
+            peek();
+            break;
+        case 8:
             printf("exiting..\n");
             ch=0;
             break;
