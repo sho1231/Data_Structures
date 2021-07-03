@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1625292897 source:d:\course\c\data structure\search\binary search\binary\main.c
-	<stdio.h>
-	<stdlib.h>
-	<stdbool.h>
-
