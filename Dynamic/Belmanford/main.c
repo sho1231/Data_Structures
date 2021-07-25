@@ -36,8 +36,7 @@ int main()
         for(int j=0;j<g->v;j++)
             fscanf(fp,"%d",&g->adj[i][j]);
     }
-    belman(3);
-    display();
+    belman(0);
 }
 void min_d(int u,int v)
 {
@@ -57,6 +56,23 @@ void belman(int x)
             }
         }
     }
+    //detecting negative cycle
+    bool flag=false;
+    for(int i=0;i<g->v;i++)
+        {
+            for(int j=0;j<g->v;j++)
+            {
+                if((g->adj[i][j]!=0 || g->adj[i][j]!=inf) &&(dis[i]+g->adj[i][j])<dis[j])
+                   {
+                       flag=true;
+                       break;
+                   }
+            }
+        }
+    if(flag==false)
+        display();
+    else
+        printf("Negative cycle detected..");
 }
 void display()
 {
