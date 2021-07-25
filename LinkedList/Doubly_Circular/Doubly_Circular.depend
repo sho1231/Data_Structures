@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1624721072 source:d:\course\c\data structure\linkedlist\circular linkedlist menu driven\doubly_circular\main.c
-	<stdio.h>
-	<stdlib.h>
-
-1624725463 source:d:\course\c\data structure\linkedlist\doubly_circular\main.c
-	<stdio.h>
-	<stdlib.h>
-
