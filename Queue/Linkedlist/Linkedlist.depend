@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1624865174 source:d:\course\c\data structure\queue\linkedlist\main.c
-	<stdio.h>
-	<stdlib.h>
-	<stdbool.h>
-

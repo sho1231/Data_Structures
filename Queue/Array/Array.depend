@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1624863368 source:d:\course\c\data structure\queue\array\main.c
-	<stdio.h>
-	<stdlib.h>
-	<stdbool.h>
-
