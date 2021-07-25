@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1624084812 source:d:\course\c\data structure\linkedlist\test\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1624381780 source:d:\course\c\data structure\linkedlist\implementing using function\test\main.c
+	<stdio.h>
+	<stdlib.h>
+
