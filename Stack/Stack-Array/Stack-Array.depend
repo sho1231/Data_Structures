@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1624773319 source:d:\course\c\data structure\stack\stack-array\main.c
-	<stdio.h>
-	<stdlib.h>
-	<stdbool.h>
-
