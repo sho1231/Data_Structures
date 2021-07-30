@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1626969035 source:d:\course\c\data structure\graph\test\main.c
-	<stdio.h>
-	<stdbool.h>
-	<stdlib.h>
-	<sys/types.h>
-	<unistd.h>
-
