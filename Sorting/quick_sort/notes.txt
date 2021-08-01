@@ -1,0 +1,3 @@
+start will increment until it finds a value greater than pivot
+end will decrement until it finds a value lesser than pivot.
+when both start and end will stop...the values of end and start will be swapped
