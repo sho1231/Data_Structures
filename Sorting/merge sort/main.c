@@ -2,13 +2,14 @@
 #include <stdbool.h>
 #include<stdlib.h>
 int *b;
+int count=0;
 void copy(int a[],int lb,int ub)
 {
     for(int i=0;i<=ub;i++)
         a[i]=b[i];
 }
 void display(int a[],int size)
-{
+{  
     for(int i=0;i<=size;i++)
         printf("%d ",a[i]);
     printf("\n");
@@ -21,7 +22,9 @@ void merge_sort(int a[],int lb,int ub)
     {
         mid=((lb+ub)/2);
         merge_sort(a,lb,mid);
+        //display(a,ub);
         merge_sort(a,mid+1,ub);
+       // display(a,ub);
         merge(a,lb,mid,ub);
         //display(a,ub);
     }
@@ -31,7 +34,7 @@ void merge(int a[],int lb,int mid,int ub)
     int i=lb;
     int j=mid+1;
     int k=lb;
-    while(i<=mid&&j<=ub)
+    while(i<=mid&&j<=ub&&++count)
     {
         if(a[i]<a[j])
         {
@@ -45,12 +48,12 @@ void merge(int a[],int lb,int mid,int ub)
         }
         k++;
     }
-    while(i<=mid)
+    while(i<=mid&&++count)
     {
         b[k]=a[i];
         k++;i++;
     }
-    while(j<=ub)
+    while(j<=ub&&++count)
     {
         b[k]=a[j];
         k++;j++;
@@ -64,7 +67,8 @@ int main()
     printf("Array before sorting:\n");
     for(int i=0;i<5;i++)
         printf("%d ",a[i]);
-    printf("\nArray after sorting:\n");
     merge_sort(a,0,4);
+    printf("\nArray after sorting:\n");
     display(a,4);
+    printf("The number of comparisons:%d",count);
 }
