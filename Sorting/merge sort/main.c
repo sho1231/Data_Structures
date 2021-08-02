@@ -23,7 +23,7 @@ void merge_sort(int a[],int lb,int ub)
         merge_sort(a,lb,mid);
         merge_sort(a,mid+1,ub);
         merge(a,lb,mid,ub);
-        display(a,ub);
+        //display(a,ub);
     }
 }
 void merge(int a[],int lb,int mid,int ub)
@@ -61,6 +61,10 @@ int main()
 {  
     int a[]={2,3,1,5,6};
     b=(int*)calloc(5,sizeof(int));
+    printf("Array before sorting:\n");
+    for(int i=0;i<5;i++)
+        printf("%d ",a[i]);
+    printf("\nArray after sorting:\n");
     merge_sort(a,0,4);
     display(a,4);
 }
