@@ -18,19 +18,6 @@ bool empty_index(int a)
     else
         return false;
 }
-bool empty_slot()
-{
-    int count=0;
-    for(int i=0;i<slot;i++)
-    {
-        if(arr[i]!=-1)
-            count++;
-    }
-    if(count==slot)
-        return false;
-    else
-        return true;
-}
 void sort()
 {
     for (int i = 0; i < arr2.size() - 1; i++)
